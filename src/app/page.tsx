@@ -1,10 +1,10 @@
-import { Login } from "@/components/Login";
+import LoginPage from "@/components/LoginComponents/LoginPage";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
-      <div className="">
-        <Login />
+      <div className="flex-1 flex items-center justify-center">
+        <LoginPage />
       </div>
     </main>
   );

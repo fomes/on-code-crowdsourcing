@@ -28,7 +28,11 @@ export function Button({
 }: ButtonProps) {
   const defaultClasses =
     "flex items-center px-[14px] py-[10px] justify-center font-semibold rounded-md transition-all duration-300";
-  const BtnClasses = twMerge(defaultClasses, variants[variant]);
+  const BtnClasses = twMerge(
+    defaultClasses,
+    variants[variant],
+    props.className
+  );
 
   return (
     <button {...props} className={BtnClasses}>
