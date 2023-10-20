@@ -1,6 +1,6 @@
 import ActionCard from "@/components/ActionCard";
 
-export default function Home() {
+export default function Problems() {
   const actions: IAction[] = [
     {
       img: "https://jpeg.org/images/jpeg-home.jpg",

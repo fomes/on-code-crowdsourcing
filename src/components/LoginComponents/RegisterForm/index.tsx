@@ -4,7 +4,7 @@ import { useState } from "react";
 import { FirstStep } from "../FirstStep";
 import { SecondStep } from "../SecondStep";
 import { Card } from "@/components/Card";
-import { LoginPageActionTypes } from "../LoginPage";
+import { LoginPageActionTypes } from "../../../app/login/page";
 import { Icon } from "@iconify/react/dist/iconify.js";
 
 type RegisterFormProps = {

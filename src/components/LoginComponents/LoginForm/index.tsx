@@ -6,7 +6,7 @@ import { Button } from "../../Button";
 import { TextInput } from "../../TextInput";
 import Link from "next/link";
 import { Icon } from "@iconify/react/dist/iconify.js";
-import { LoginPageActionTypes } from "../LoginPage";
+import { LoginPageActionTypes } from "../../../app/login/page";
 
 type LoginFormProps = {
   handleSetAction: (action: LoginPageActionTypes) => void;

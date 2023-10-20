@@ -6,7 +6,7 @@ import { twMerge } from "tailwind-merge";
 
 type ButtonProps = ComponentProps<"button"> & {
   children: ReactNode;
-  variant: ButtonVariants;
+  variant?: ButtonVariants;
   iconLeft?: string;
   iconRight?: string;
 };

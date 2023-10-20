@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import { LoginForm } from "../LoginForm";
-import { RegisterForm } from "../RegisterForm";
-import { LoginSidebarImage } from "../LoginSidebarImage";
+import { LoginForm } from "../../components/LoginComponents/LoginForm";
+import { RegisterForm } from "../../components/LoginComponents/RegisterForm";
+import { LoginSidebarImage } from "../../components/LoginComponents/LoginSidebarImage";
 
 export type LoginPageActionTypes = "login" | "register";
 
@@ -37,7 +37,7 @@ export default function LoginPage() {
   };
 
   return (
-    <main className="flex h-screen">
+    <main className="flex h-screen-navbar">
       <LoginSidebarImage />
       <div className="flex-1 flex items-center justify-center">
         {actions[state.actionType].component}
