@@ -10,12 +10,12 @@ interface SelectOption {
 type Selectprops = {
   label?: string;
   labelClassNames?: string;
-  subdescription?: string | React.ReactNode;
+  subDescription?: string | React.ReactNode;
   options: SelectOption[];
 } & React.SelectHTMLAttributes<HTMLSelectElement>;
 
 export default function Select({
-  subdescription,
+  subDescription,
   labelClassNames,
   options,
   label,
@@ -29,14 +29,17 @@ export default function Select({
   return (
     <div className="mb-6">
       <label className={mergedLabelClasses}> {label}</label>
-      <label> {subdescription}</label>
+      <label> {subDescription}</label>
       <div className="flex items-center border border-sub rounded-lg bg-white">
         <select
+          {...props}
           id="votingTime"
           className={`bg-white border text-gray-900 ${defaultSelectClasses}`}
         >
           {options.map((option) => (
-            <option value={option.value}>{option.text}</option>
+            <option value={option.value} defaultValue={"3"} key={option.value}>
+              {option.text}
+            </option>
           ))}
         </select>
       </div>
