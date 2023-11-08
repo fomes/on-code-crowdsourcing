@@ -45,11 +45,16 @@ export function RegisterForm({ handleSetAction }: RegisterFormProps) {
 
   const steps = [
     <FirstStep
+      key={state.step}
       state={state}
       handleNextStep={handleNextStep}
       handleChangeState={handleChangeState}
     />,
-    <SecondStep state={state} handleChangeState={handleChangeState} />,
+    <SecondStep
+      key={state.step}
+      state={state}
+      handleChangeState={handleChangeState}
+    />,
   ];
 
   return (

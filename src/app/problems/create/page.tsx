@@ -1,10 +1,10 @@
 "use client";
 
-import { Button } from "@/components/Button";
-import { LoginSidebarImage } from "@/components/LoginComponents/LoginSidebarImage";
 import Select from "@/components/Select";
 import TextArea from "@/components/TextArea/intex";
+import { Button } from "@/components/Button";
 import { TextInput } from "@/components/TextInput";
+import { LoginSidebarImage } from "@/components/LoginComponents/LoginSidebarImage";
 
 import React from "react";
 import { twMerge } from "tailwind-merge";
