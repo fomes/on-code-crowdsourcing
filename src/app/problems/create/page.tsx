@@ -50,6 +50,7 @@ export default function CreateProblemPage() {
         <div className="flex flex-1 justify-center pl-10 pr-10 pb-10 overflow-auto">
           <div className="mt-20 max-w-[588px] w-[100%]">
             <TextInput
+              name="title"
               label="Título da ação"
               placeholder="Título da ação"
               labelClassName={labelStyle}
@@ -78,6 +79,7 @@ export default function CreateProblemPage() {
               <div className="flex gap-2 max-w-[100%]">
                 <TextInput
                   label=""
+                  name="estate"
                   placeholder="Estado - UF"
                   onChange={(e) =>
                     handleChangeState({
@@ -88,6 +90,7 @@ export default function CreateProblemPage() {
                 />
                 <TextInput
                   label=""
+                  name="city"
                   placeholder="Cidade"
                   onChange={(e) =>
                     handleChangeState({
@@ -98,6 +101,7 @@ export default function CreateProblemPage() {
                 />
                 <TextInput
                   label=""
+                  name="neighborhood"
                   placeholder="Bairro"
                   onChange={(e) =>
                     handleChangeState({
@@ -110,6 +114,7 @@ export default function CreateProblemPage() {
             </div>
 
             <TextInput
+              name="imageLoader"
               label="Carregue sua imagem"
               labelClassName={`${labelStyle} mb-0`}
               placeholder="Insira o link aqui"
@@ -129,6 +134,7 @@ export default function CreateProblemPage() {
               value={state.imageUrl}
             />
             <TextInput
+              name="pix"
               label="Chave PIX"
               labelClassName={`${labelStyle} mb-0`}
               subDescription="Insira a chave pix de quem ficará responsável por receber as doações e dar vida a solução encontrada, seja pessoa física ou jurídica."

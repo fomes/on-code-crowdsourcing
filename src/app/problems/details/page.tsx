@@ -91,7 +91,7 @@ export default function DetailsPage() {
 
               <input
                 type="text"
-                name="solution-desc"
+                name="comment-desc"
                 placeholder="Adicione um comentário..."
                 className="bg-transparent w-full border-b-[0.8px] border-[#79808B] focus:outline-none"
               />

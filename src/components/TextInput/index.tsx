@@ -29,12 +29,12 @@ export function TextInput({
 
   return (
     <div className="mb-6">
-      <label htmlFor="" className={mergedLabelClass}>
-        {label}
-      </label>
-      <label htmlFor="">{subDescription}</label>
+      <label className={mergedLabelClass}>{label}</label>
+      <label>{subDescription}</label>
       <div className="flex items-center border border-sub rounded-[8px] bg-white">
-        {iconLeft && <Icon icon={iconLeft} className="pl-2 text-sub text-2xl" />}
+        {iconLeft && (
+          <Icon icon={iconLeft} className="pl-2 text-sub text-2xl" />
+        )}
         <input
           {...props}
           className={`${defaultInputClass} ${iconLeft && "pl-2"} ${
