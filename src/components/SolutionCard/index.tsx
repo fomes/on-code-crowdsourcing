@@ -2,7 +2,7 @@
 
 import { solution } from "@/_data/SolutionData";
 import { VotedItem } from "../VotedItem";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 interface SolutionCardProps {
   solution: (typeof solution)[0];

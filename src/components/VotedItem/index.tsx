@@ -6,7 +6,8 @@ interface VotedItemProps extends React.HTMLAttributes<HTMLSpanElement> {
 }
 
 export function VotedItem({ voted, ...props }: VotedItemProps) {
-  const basedStyled = "flex items-center gap-1 py-2 px-4 rounded-lg cursor-pointer";
+  const basedStyled =
+    "flex items-center gap-1 py-2 px-4 rounded-xl cursor-pointer hover:bg-on-code-70 transition-all hover:duration-300";
 
   return (
     <>
