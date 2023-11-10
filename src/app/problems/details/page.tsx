@@ -1,10 +1,8 @@
-"use client";
-
 import { comments } from "@/_data/CommentsData";
 import { solution } from "@/_data/SolutionData";
 import { CommentCard } from "@/components/CommentCard";
+import { IconClientComponent } from "@/components/IconClientComponent";
 import { SolutionCard } from "@/components/SolutionCard";
-import { Icon } from "@iconify/react/dist/iconify.js";
 import Image from "next/image";
 import React from "react";
 
@@ -28,7 +26,8 @@ export default function DetailsPage() {
               />
 
               <span className="flex gap-1 items-center">
-                <Icon icon="carbon:location-filled" /> Bairro, Cidade - UF
+                <IconClientComponent icon="carbon:location-filled" /> Bairro,
+                Cidade - UF
               </span>
 
               <p className="text-justify">
