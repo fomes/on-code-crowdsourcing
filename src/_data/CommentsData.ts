@@ -1,4 +1,4 @@
-export const comments = [
+export const comments: IComment[] = [
   {
     avatar: "/assets/Ellipse1.png",
     name: "Felipe Gomes",

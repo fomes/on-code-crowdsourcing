@@ -1,4 +1,4 @@
-export const solution = [
+export const solution: ISolution[] = [
   {
     title: "Título da solução 1",
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo sint  officiis voluptate earum facilis. Repellat sapiente rerum debitis id  ullam consequuntur ab ipsam libero quo! Iste suscipit consequatur sed  quos?",
